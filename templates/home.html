@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename="js/home.js")}}"></script>
+</head>
+<body style="text-align:center">
+
+<h2>NESH</h2>
+
+<form method="POST" onSubmit = "search_item_ajax()">
+  <input type="text" id="search_item" name="search_item" placeholder="Enter ticker or Keyword">
+  <br><br>
+  <input type="submit" value="Search">
+</form> 
+<br><br>
+
+<table id="category_table"></table>
+
+</body>
+</html>
